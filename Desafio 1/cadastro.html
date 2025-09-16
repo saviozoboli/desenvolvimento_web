@@ -22,7 +22,7 @@
         </header>
         <main>
             <h1>Reservar</h1>
-            <form id="form-cadastro" onsubmit="onSubmitForm()">
+            <form id="form-cadastro" onsubmit="onSubmitForm(event)">
                 <h3>Informações da vaga</h3>
                 <div class="linha-form">
                     <div class="fake-input">
@@ -100,12 +100,15 @@
                         >
                     </div>
                 </div>
-                
+                <div id="mensagem">
+                    
+                </div>
                 <div class="linha-botoes">
                     <button class="primario" type="submit">Enviar</button>
                     <button class="secundario" type="reset">Limpar</button>
                 </div>
             </form>
+            <button class="debug" onclick="removerReservas()">DEBUG - Limpar reservas</button>
         </main>
         <footer>
             Developed by Savio Zoboli - GR ADS 2024/2
