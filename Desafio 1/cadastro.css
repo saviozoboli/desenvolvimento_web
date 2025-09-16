@@ -1,0 +1,72 @@
+.linha-form{
+    padding:8px 0 8px 0;
+    display:flex;
+    gap:16px;
+}
+
+.fake-input{
+    border-radius: 4px;
+    border:1px #4F4F4F solid;
+    padding:2px;
+}
+
+label{
+    color:#4F4F4F;
+}
+
+input{
+    border:0;
+    font-size: 18px;
+}
+
+.grande{
+    width:250px;
+}
+
+.medio{
+    width: 150px;;
+}
+
+.pequeno{
+    width: 100px;
+}
+
+input:focus{
+    outline:0;
+}
+
+.primario{
+    width: 90px;
+    font-size: 18px;
+    background-color: transparent;
+    border:1px #00FF7F solid;
+    color:#00FF7F;
+    border-radius: 4px;
+    padding:4px;
+}
+
+.primario:hover{
+    background-color: #98FB98;
+    color:#FAFAFA;
+    cursor: pointer;
+}
+
+.secundario{
+    width: 60px;
+    font-size: 14px;
+    background-color: transparent;
+    border:1px #4F4F4F solid;
+    color:#4F4F4F;
+    border-radius: 4px;
+    padding:4px;
+}
+
+.secundario:hover{
+    border:1px #1F1F1F solid;
+    color:#1F1F1F;
+    cursor: pointer;
+}
+
+.invalido{
+    border:1px red solid;
+}

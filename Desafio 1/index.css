@@ -1,0 +1,42 @@
+
+h1{
+    font-size: 24px;
+}
+
+table{
+    width:100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+thead{
+    font-weight: bold;
+}
+
+table tr td:nth-child(2){
+    width:150px;
+    padding:2px;
+    box-sizing: border-box;
+}
+
+td span{
+    display: block;
+    width:100%;
+    text-align: center;
+}
+
+
+.reservado{
+    color:#87CEEB;
+    border:1px #87CEEB solid;
+}
+
+
+.livre{
+    color:#00FF7F;
+    border:1px #00FF7F solid;
+}
+
+tbody tr:hover{
+    background:#DDDDDD;
+}

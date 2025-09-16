@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Listar vagas - Parkmobil</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="cadastro.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="cadastro.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="img-example"></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Listar vagas</a></li>
+                    <li><a href="cadastro.html" class="active">Cadastrar reserva</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Reservar</h1>
+            <form id="form-cadastro" onsubmit="onSubmitForm()">
+                <h3>Informações da vaga</h3>
+                <div class="linha-form">
+                    <div class="fake-input">
+                        <label for="vaga">Vaga</label>
+                        <input 
+                            id="vaga" 
+                            type="number" 
+                            class="pequeno"
+                            placeholder="ex. 02"
+                        >
+                    </div>
+                </div>
+                <h3>Informações do proprietário</h3>
+                <div class="linha-form">
+                    <div class="fake-input">
+                        <label for="nome">Nome</label>
+                        <input
+                            id="nome"
+                            type="text"
+                            class="grande"
+                            placeholder="ex. João José da Silva Souza"
+                            >
+                    </div>
+                </div>
+                <div class="linha-form">
+                    <div class="fake-input">
+                        <label for="bloco">Bloco</label>
+                        <input 
+                            id="bloco" 
+                            type="text" 
+                            class="pequeno"
+                            placeholder="ex. 03"
+                        >
+                    </div>
+                    <div class="fake-input">
+                        <label for="apto">Apto</label>
+                        <input 
+                            id="apto" 
+                            type="text" 
+                            class="pequeno"
+                            placeholder="ex. 200"    
+                        >
+                    </div>
+                </div>
+                
+                <h3>Informações do veículo</h3>
+                <div class="linha-form">
+                    <div class="fake-input">
+                        <label for="veiculo">Veículo</label>
+                        <input 
+                            id="veiculo" 
+                            type="text" 
+                            class="grande"
+                            placeholder="ex. Nissan Silvia"
+                        >
+                    </div>
+                </div>
+                <div class="linha-form">
+                    <div class="fake-input">
+                        <label for="placa">Placa</label>
+                        <input 
+                            id="placa" 
+                            type="text" 
+                            class="medio"
+                            placeholder="ex. ABC1D23"
+                        >
+                    </div>
+                    <div class="fake-input">
+                        <label for="cor">Cor</label>
+                        <input 
+                            id="cor" 
+                            type="text" 
+                            class="medio"
+                            placeholder="ex. Preto"
+                        >
+                    </div>
+                </div>
+                
+                <div class="linha-botoes">
+                    <button class="primario" type="submit">Enviar</button>
+                    <button class="secundario" type="reset">Limpar</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            Developed by Savio Zoboli - GR ADS 2024/2
+        </footer>
+    </body>
+</html>
