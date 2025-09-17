@@ -1,35 +1,8 @@
 const num_vagas = 25;
-
-window.onload = ()=>{
-    let vagas = localStorage.getItem('vagas');
-    if(!vagas || vagas.length == 0){
-        let listaVagas = [];
-        for(var i = 1;i<=num_vagas;i++){
-            listaVagas.push({
-                vaga:i,
-                nome:'',
-                apto:'',
-                bloco:'',
-                veiculo:'',
-                placa:'',
-                cor:'',
-            })
-        }
-        localStorage.setItem('vagas',JSON.stringify(listaVagas));
-        console.log("Atualizado lista de vagas com as seguintes vagas:")
-        console.log(listaVagas)
-    }else{
-        console.log('Vagas já preenchidas');
-    }
-}
-
 function onSubmitForm(e){
     e.preventDefault();
     let dados = getFormulario();
     if(isDadosValidos(dados)){
-
-        
-
         let vagas = JSON.parse(localStorage.getItem('vagas')) || [];
 
         if(vagas.filter(v=>v.vaga == dados.vaga && v.nome != '').length==0){ //Vaga disponível
