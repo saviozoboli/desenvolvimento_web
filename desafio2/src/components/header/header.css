@@ -1,0 +1,15 @@
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+header h1{
+    font-family: arial;
+    font-size: 24px;
+    color:#CDCDCD;
+}
+

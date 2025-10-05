@@ -1,0 +1,28 @@
+button{
+    width:100px;
+    font-size: 14px;
+    padding:4px;
+    border:0;
+    border-radius: 4px;
+    color:white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.primario{
+    background-color: green;
+}
+
+.primario:hover{
+    background-color: darkgreen;
+}
+
+.secundario{
+    background-color: #ADADAD;
+}
+
+.secundario:hover{
+    background-color: #9D9D9D;
+}
